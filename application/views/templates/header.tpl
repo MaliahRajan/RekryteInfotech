@@ -5,11 +5,11 @@
 		<meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">	
 
-		<title>Porto - Responsive HTML5 Template 4.4.0</title>	
+		<title>{$site_title}</title>	
 
 		<meta name="keywords" content="HTML5 Template" />
-		<meta name="description" content="Porto - Responsive HTML5 Template">
-		<meta name="author" content="okler.net">
+		<meta name="description" content="{$site_desc}">
+		<meta name="author" content="{$app_title}">
 
 		<!-- Favicon -->
 		<link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon" />
@@ -61,8 +61,8 @@
 						<div class="header-row">
 							<div class="header-column">
 								<div class="header-logo">
-									<a href="index.html">
-										<img alt="Porto" width="280" height="75" data-sticky-width="220" data-sticky-height="50" data-sticky-top="33" src="img/logo-rekryte.png">
+									<a href="index.php">
+										<img alt="Rekryte Infotech" width="350" height="75" data-sticky-width="220" data-sticky-height="50" data-sticky-top="33" src="img/logo-rekryte.png">
 									</a>
 								</div>
 							</div>

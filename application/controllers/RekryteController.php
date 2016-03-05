@@ -17,12 +17,10 @@ class RekryteController extends CI_Controller
         $_SESSION['basePath'] = $this->config->item('base_url_manual');
         /*Config Values*/
         $config = $this->Rekryte_model->getConfig();
-        $siteTitleKey = $this->Rekryte_model->searchArray($config,'key','site_title');
-        $appTitleKey = $this->Rekryte_model->searchArray($config,'key','app_title');
-        /*Assign Smarty Values*/
-       	$this->smarty->assign($config[$siteTitleKey]['key'],$config[$siteTitleKey]['value']);
-        $this->smarty->assign($config[$appTitleKey]['key'],$config[$appTitleKey]['value']);
 
+        foreach ($config as $key => $value) {
+          $this->smarty->assign($value['key'],$value['value']);
+        }
         $this->smarty->assign("basePath",$_SESSION['basePath']);
        	$this->smarty->assign("xjaxJs",$this->xajax->printJavaScript());
 
